@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="voxputih.png">
+    <title>Survey Form</title>
+</head>
+<body>
+<img id="logo" src="voxungu.png" height="32" width="32px">
+    <h1 id="title">Ihsan's version of FreeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" action="submit.html">
+        <fieldset>
+            <label id="name-label" for="text">Name: <input type="text" id="name" name="text" placeholder="Your full name here" required></label>
+            <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="Your email here" required></label>
+            <label id="number-label" for="number">Number: <input type="number" id="number" name="number" placeholder="Your age here" min="18" max="120"></label>
+        </fieldset>
+        <fieldset for="dropdown"> 
+            <label>How did you hear about us?
+                <select id="dropdown" name="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Do you enjoy learning with us?</legend>
+            <label for="radioyes">
+                <input type="radio" name="radio" id="radioyes" class="inline" value="Yes">Yes
+            </label>
+            <label for="radiono">
+                <input type="radio" name="radio" id="radiono" class="inline" value="No">No
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="checkbox">What coding languange that you already learn in our website?
+                <br>
+                <input type="checkbox" name="checkbox" value="checkbox" class="checkbox">html
+                <input type="checkbox" name="checkbox" value="checkbox" class="checkbox">css
+                <input type="checkbox" name="checkbox" value="checkbox" class="checkbox">javascript
+                <input type="checkbox" name="checkbox" value="checkbox" class="checkbox">SQL
+                <input type="checkbox" name="checkbox" value="checkbox" class="checkbox">other
+            </label>
+            <br>
+            <label id="labeltext" for="textarea">Do you have any languange reccomendation we should add?
+                <textarea id="textarea" name="textarea" rows="3" cols="30" placeholder="add a new js languange..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>

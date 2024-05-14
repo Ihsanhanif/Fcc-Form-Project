@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+    --h1: "Montserrat";
+    --font: "Sneaky-Times", "Rubik";
+    --primarycolor: #ffffff;
+    --secondcolor: #563cfe;
+    --text: #0a0a23;
+    --input: var(--font);
+}
+
+body {
+display: block;
+width: 100%;
+min-height: 100vh;
+background-color: var(--primarycolor);
+color: var(--secondcolor); 
+}
+
+img {
+    size: auto;
+}
+
+#title {
+font-family: var(--h1);
+margin: 3em auto;
+margin: auto;
+text-align: center;
+}
+
+#description {
+font-family: var(--font);
+margin: 1em;
+margin-top: 30px;
+text-align: center;
+}
+
+form {
+width: 60vw;
+max-width: 500px;
+min-width: 300px;
+margin: 0 auto;
+padding-bottom: 2em;
+}
+
+fieldset {
+border: none;
+padding: 1rem 0;
+}
+
+input {
+    border: 1.5px solid var(--secondcolor);
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select{
+    background-color: var(--primarycolor);
+    border: 1px solid var(--secondcolor);
+    color: var(--text);
+}
+
+fieldset{
+    font-family: sans-serif;
+}
+
+.checkbox {
+    width:fit-content;
+    margin:  8px;
+    vertical-align: auto;
+    display: inline-block;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2.5em;
+    font-size: 1.1rem;
+    background-color: var(--secondcolor);
+    border-color: var(--secondcolor);
+    color: var(--primarycolor);
+    min-width: 100px;
+  }
+
+/* done bang uhuyyy */ 
