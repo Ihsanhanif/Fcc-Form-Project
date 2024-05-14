@@ -15,8 +15,7 @@ display: block;
 width: 100%;
 min-height: 100vh;
 background-color: var(--primarycolor);
-color: var(--secondcolor); 
-overflow: hidden;
+color: var(--secondcolor); 
 }
 
 img {
